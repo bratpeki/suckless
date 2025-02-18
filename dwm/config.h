@@ -15,8 +15,8 @@ static const char col_gray3[]       = "#bbbbbb"; /* bar text color */
 static const char col_gray4[]       = "#eeeeee"; /* bar highlight text color */
 static const char col_cyan[]        = "#555555"; /* bar highlight fill color, active window border */
 
-static const char *fonts[]          = { "Hack Nerd Font Mono:pixelsize=16:antialias=true:autohint=true" };
-static const char dmenufont[]       = "Hack Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
+static const char *fonts[]          = { "monospace:pixelsize=16:antialias=true:autohint=true" };
+static const char dmenufont[]       = "monospace:pixelsize=16:antialias=true:autohint=true";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -74,8 +74,8 @@ static const char *spawnScreencap[]  = { "screencap", NULL };
 static const char *spawnSlock[]      = { "slock", NULL };
 static const char *spawnWebcam[]     = { "mpv", "/dev/video0", "--no-cache", "--untimed", "--no-demuxer-thread", "--video-sync=audio", "--vd-lavc-threads=1", "-vf=hflip", "&", NULL };
 
-static const char *lightUp[]         = {"light", "-A", "5", NULL};
-static const char *lightDown[]       = {"light", "-U", "5", NULL};
+static const char *lightUp[]         = {"xbacklight", "-inc", "5", NULL};
+static const char *lightDown[]       = {"xbacklight", "-dec", "5", NULL};
 
 
 static Key keys[] = {
