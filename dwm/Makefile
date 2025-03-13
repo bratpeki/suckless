@@ -47,6 +47,7 @@ install: all
 install_add:
 	mkdir -p ${HOME}/.config/suckless-bratpeki/
 	cp -n ./dwm-startup-def ${HOME}/.config/suckless-bratpeki/dwm-startup
+	cp ./dwm.desktop /usr/share/xsessions/
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
